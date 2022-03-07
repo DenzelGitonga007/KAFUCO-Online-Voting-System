@@ -52,7 +52,7 @@ include('dbcon.php');
 	  </div>
 	  <div class="modal-body">
 	  <?php include('about.php') ?>
-          Another close button below the pop-up
+<!--          Another close button below the pop-up-->
 <!--	  <div class="modal-footer_about">-->
 <!--	    <a href="#" class="btn" data-dismiss="modal">Close</a>-->
 <!--		</div>-->
@@ -74,8 +74,8 @@ include('dbcon.php');
 	    <p><font color="gray">Are You Sure you Want to LogOut?</font></p>
 	  </div>
 	  <div class="modal-footer">
-	    <a href="#" class="btn" data-dismiss="modal">No</a>
-	    <a href="logout.php" class="btn btn-primary">Yes</a>
+	    <a href="#" class="btn btn-info" data-dismiss="modal">No</a>
+	    <a href="logout.php" class="btn btn-success">Yes</a>
 		</div>
 		</div>
 
@@ -83,27 +83,27 @@ include('dbcon.php');
 	</div>
 	</div>
 	</div>
-	<div id="element" class="hero-body">
+	<div id="element" class="hero-body" style="background-color: #268b23; border: 1px solid;">
 	  <div class="thumbnail_gallery">
-                <h2>CHMSC Gallery</h2>
+                <h2>KAFUCO Gallery</h2>
 				<p><font color="black">Click the image to view more...</font></p>
 				<div id="myGallery" class="spacegallery">
-					<img src="images/c10.jpg" alt="" />
-					<img src="images/c2.jpg" alt="" />
-					<img src="images/c3.jpg" alt="" />
-					<img src="images/c4.jpg" alt="" />
-					<img src="images/c5.jpg" alt="" />
-					<img src="images/c6.jpg" alt="" />
-					<img src="images/c7.jpg" alt="" />
-					<img src="images/c8.jpg" alt="" />
-					<img src="images/c9.jpg" alt="" />
-					<img src="images/c1.jpg" alt="" />
+                    <img src="images/With%20President.jpg" alt="With the President"/>
+                    <img src="images/Certs.jpg" alt="Certifications" />
+                    <img src="images/Professors.jpg" alt="Professors" />
+                    <img src="images/Team.jpg" alt="Athletics Team" />
+                    <img src="images/Team%202.jpg" alt="Educational friends" />
+                    <img src="images/Bus.jpg" alt="The trasportation means" />
+                    <img src="images/SOBBE.jpg" alt="School of Business" />
+                    <img src="images/Students%20outside.jpg" alt="Students in group work" />
+                    <img src="images/Admission.jpg" alt="Admission Process" />
+                    <img src="images/Front.jpg" alt="Aeriel View" />
+
             </div>
 			</div>
 			  <div class="thumbnail_mission">
-			  <h2>Mission</h2>
-			  <p>Laboratory School wly serving as a training ground for education students,seeks to develop in excellence
-			  and with quality, the total personality of children and youth become worthy members of sociaty.
+			  <h2>Vision</h2>
+			  <p>To be a University of Excellence in Teaching, Learning, Research, Innovation and Holistic Development
 			  </p>
 			   <a class="btn btn-info" data-toggle="modal" href="#mission"><i class="icon-list-alt icon-large"></i>&nbsp;Read More</a>
 			   	<div class="modal hide fade" id="mission">
@@ -112,14 +112,14 @@ include('dbcon.php');
 	    <h3> </h3>
 	  </div>
 	  <div class="modal-body">
-	   <h2>College Of Education Mission</h2>
+	   <h2>Philosophy</h2>
 <p><font color="black">
-The college of education as a leading training center for globally competitive professional teachers in the elementary and secondary levels
+        KAFUCO endeavours to be ranked amongst the world class universities based on academic excellence and research that impact on societal needs.
 </p>	  
 
-	   <h2>College Of Education Vission</h2>
+	   <h2>Motto</h2>
 <p><font color="black">
-Vision Train and develop highly motivated and committed professional elementary and secondary teachers equipped with instructional,personal and social competencies conducive to teh task of human development.
+        Spring of Knowledge
 </p>	 
 	  </div>
 	  <div class="modal-footer">
@@ -131,10 +131,8 @@ Vision Train and develop highly motivated and committed professional elementary 
 			  </div>
 			  
 			   <div class="thumbnail_vission">
-			   <h2>Objectives</h2><p>High School Level</p>
-			  <p>*develop an Enlightened commitment to the national ideals by cherishing,
-			  preserving and developing the desirable aspects of Filipino heritage, spiritually,
-			  morally and socialy.
+			   <h2>Mission</h2><p>Campus Level</p>
+			  <p>To provide quality education and training, research and innovation to meet the needs of a dynamic Society
 			  </p>
 			  <a class="btn btn-info" data-toggle="modal" href="#read_objectives"><i class="icon-list-alt icon-large"></i>&nbsp;Read More</a>
 			  
@@ -144,27 +142,25 @@ Vision Train and develop highly motivated and committed professional elementary 
 	    <h3> </h3>
 	  </div>
 	  <div class="modal-body">
-	  <p><font color="black">* Provide knowledge and desirable attitudes for understanding the nature and purpose of man-one�s self, one�s own people, the races, places and times.
-	  </font>
-	  </p>
-	  <p><font color="black">* Develop higher intellectual skills of students as well as their work skills and ethics for the wish choice of career and vocation or, specialized training in specific occupation. 
-	  </font>
-	  </p><p><font color="black">* Provide avenues for the maximum utilization of ones potentials and abilities in science and technology and arts for self-fulfilment and promoting the welfare of others.
-	  </font>
-	  </p>
-	  <h2>Objectives</h2>
-	  <p>Elementary Level</p>
-	 <p><font color="black">* Provide the basic knowledge and develop the foundation skills, attitude and values essential to the child�s personal development necessary for living in contributing and developing and changing milieu.]
-	 </p>
-	 <p>
-	 * Provide learning experiences which increase the child�s awareness of the responsiveness to the change and just demands of society and to prepare him/her for constructive and effective environment.
-	 </p>
-	 <p>
-	 * Promotes and intensify the child�s knowledge and identification with and love for the people and nation to which he/she belongs.
-	 </p>
-	 <p>* Promote work experiences which develop and enhance the child�s orientation to the world of work and creativity to prepare him to engage and honest and spiritual work
-	 </p>
+          <h2>Mandate</h2>
+     <p>The University College derives its mandate from University Act 2012 No.42, of 13th December, 2012, which stipulates the objectives as follows.</p>
+     <p>* Advancement of knowledge through teaching, scholarship research and scientific investigation.</p>
+     <p>* Promotion of learning in the students body and society in general.</p>
+     <p>* Support and contribution to realization of national economic and social development.</p>
+	 <p>* Promotion of high standards in and quality of teaching and research.</p>
+	 <p>* Education, training and retraining high level professionals, technical and management personnel</p>
+	 <p>* Dissemination of outcomes of research conducted by the university to general community.</p>
+     <p>* Facilitation of life-long learning through provision of adult and continuing education.</p>
+     <p>* Fostering of capacity for independent critical thinking among its students.</p>
+     <p>* Promotion of gender balance and equality of opportunity among students and employees.</p>
+     <p>* Promotion of equalization for persons with disabilities, minorities and other marginalized groups.</p>
+     <p>* To contribute to agricultural, industrial and technological development of Kenya in collaboration with industrial and institutions through the transfer of appropriate technology.</p>
+     <p>* To develop and provide education, culture professional, technological and vocational services to the community and in particular, foster corporate social responsibility.</p>
+     <p>* To provide programmers, products and services in ways that reflects the principles of equity and social justice.</p>
+     <p>* To facilitate student mobility between different programmers and different training institutions, universities and industry.</p>
+     <p>* To foster the general welfare of all staff and students.</p>
 	 </div>
+<!--                    Another closing button-->
 	  <div class="modal-footer">
 	    <a href="#" class="btn" data-dismiss="modal">Close</a>
 
