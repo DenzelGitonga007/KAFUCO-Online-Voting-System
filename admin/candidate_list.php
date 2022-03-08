@@ -83,17 +83,17 @@ include('dbcon.php');
 	</div>
 	</div>
 <!--	The links to the candidates in each division-->
-	<div id="element" class="hero-body" style="background-color: #268b23; border: 1px solid;">
-	    <div class="pagination btn-group">
-    <ul style="background-color: #d9a43a; color: #268b23; text-shadow: none;">
+	<div id="element" class="hero-body"style="background-color: #268b23; border: 1px solid;">
+	    <div class="pagination">
+    <ul style="text-shadow: none;">
 
-    <li  class="active"><a href="candidate_list.php" class="btn-info" style="color: whitesmoke">All</a></li>
-    <li><a href="candidate_for_governor.php" class="btn-info" style="color: whitesmoke">Governor</a></li>
-    <li><a href="candidate_for_vice-governor.php" class="btn-info" style="color: whitesmoke">Vice-Governor</a></li>
-    <li><a href="1st_year.php" class="btn-info" style="color: whitesmoke">1st Year Representative</a></li>
-    <li><a href="2nd_year.php" class="btn-info" style="color: whitesmoke">2nd Year Representative</a></li>
-    <li><a href="3rd_year.php" class="btn-info" style="color: whitesmoke">3rd Year Representative</a></li>
-    <li><a href="4th_year.php" class="btn-info" style="color: whitesmoke">4th Year Representative</a></li>
+    <li  class="active"><a href="candidate_list.php" class="btn btn-info" style="color: whitesmoke;">All</a></li>
+    <li><a href="candidate_for_governor.php" class="btn btn-info" style="color: whitesmoke">Governor</a></li>
+    <li><a href="candidate_for_vice-governor.php" class="btn btn-info" style="color: whitesmoke">Vice-Governor</a></li>
+    <li><a href="1st_year.php" class="btn btn-info" style="color: whitesmoke">1st Year Representative</a></li>
+    <li><a href="2nd_year.php" class="btn btn-info" style="color: whitesmoke">2nd Year Representative</a></li>
+    <li><a href="3rd_year.php" class="btn btn-info" style="color: whitesmoke">3rd Year Representative</a></li>
+    <li><a href="4th_year.php" class="btn btn-info" style="color: whitesmoke">4th Year Representative</a></li>
 
     </ul>
 	
