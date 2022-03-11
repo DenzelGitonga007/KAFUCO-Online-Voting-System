@@ -67,7 +67,7 @@
 	<script type="text/javascript" charset="utf-8">
 			jQuery(document).ready(function() {
 			$('#index').qtip({
-			content: 'Click here to  vote later, retun to main page',
+			content: 'Click here to  vote later, return to main page',
 			position: {
             my: 'top left',
             target: 'mouse',
@@ -239,7 +239,7 @@
 			<script type="text/javascript" charset="utf-8">
 			jQuery(document).ready(function() {
 			$('#logout').qtip({
-			content: 'Click Here to LogOut',
+			content: 'Click Here to Submit Vote',
 			position: {
             my: 'top left',
             target: 'mouse',

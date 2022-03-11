@@ -55,7 +55,7 @@ include('header.php');
 	<tr>
         <td style="color: darkgoldenrod;">...<td></tr>
 	<tr><td></td><td>
-    <button class="btn btn-primary" name="Login"><i class="icon-ok icon-large"></i>&nbsp;Login</button>
+    <button class="btn btn-success" name="Login"><i class="icon-ok icon-large"></i>&nbsp;Login</button>
 	</td></tr>
 	<tr><td>
 	</td><tr>

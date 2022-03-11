@@ -1,44 +1,29 @@
-<?php 
+<?php
 include('session.php');
 include('dbcon.php');
 include('header.php');
- ?>
- <link rel="stylesheet" type="text/css" href="admin/css/style.css" />
+?>
+<link rel="stylesheet" type="text/css" href="admin/css/style.css" />
 <script src="jquery.iphone-switch.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-	<div class="container">
-	     
-		<a class="brand">
-		<img src="admin/images/chmsc.png" width="60" height="60">
- 	</a>
-	<a class="brand">
-	 <h2>CHMSC Laboratory School Voting System</h2>
-	 <div class="chmsc_nav"><font size="4" color="white">Carlos Hilado Memorial State College</font></div>
- 	</a>
-
-	<?php include('head.php'); ?>
- 
-	</div>
-	</div>
-	</div>
+<!--The voters header file-->
+<?php include('voters_nav_top.php'); ?>
+<br>
 <div class="wrapper">
-
-<div class="hero-body-voting">
-<div class="vote_wise"><font color="white" size="6">"Please Vote Wisely"</font></div>
-<div class="help">
-<a class="btn btn-info" id="help" href="help2.php"><i class="icon-info-sign icon-large"></i>&nbsp;Help</a>
-</div>
-</div>
+    <div class="hero-body-voting" style="background-color: #b58815;">
+        <div class="vote_wise" style="text-shadow: none;"><font color="white" size="6">"Please Vote Wisely"</font></div>
+        <div class="help">
+            <a class="btn btn-success" id="help" href="help2.php"><i class="icon-info-sign icon-large"></i>&nbsp;Help</a>
+        </div>
+    </div>
 <form method ="post" action="vote2.php">
-<div class="gov-align">
-<div class="hero-body-candidate_gov">
-<font color="white">Candidate for Governor</font>
-</div>
-<div class="governor">
-<div class="gov-margin">
+    <div class="gov-align" style="background-color: #268b23; border: 1px solid; border-radius: 6px;">
+
+        <h2 style="text-shadow: none; color: whitesmoke; text-align: center;">Candidate for Governor</h2>
+
+        <div class="governor" style="background-color:limegreen;">
+            <div class="gov-margin">
 <?php 
 $governor=mysqli_query($conn,"select * from candidate where Position='Governor'")or die(mysqli_error());
 while($row=mysqli_fetch_array($governor)){ $governor_id=$row['CandidateID']; ?>
@@ -51,10 +36,10 @@ while($row=mysqli_fetch_array($governor)){ $governor_id=$row['CandidateID']; ?>
 ?>
 </div>
 </div>
-<div class="select_gov">
-<div class="margin-gov">
-<select name="governor" class="span222">
-<option class="option">--Select Candidate--</option>
+        <div class="select_gov" style="background-color: #268b23;">
+            <div class="margin-gov">
+                <select name="governor" class="span222">
+                    <option class="option">--Select Candidate--</option>
 <?php
 $governor=mysqli_query($conn,"select * from candidate where Position='Governor'")or die(mysqli_error());
 while($row=mysqli_fetch_array($governor)){ $governor_id=$row['CandidateID']; ?>
@@ -67,13 +52,12 @@ while($row=mysqli_fetch_array($governor)){ $governor_id=$row['CandidateID']; ?>
 
 
 
-<div class="vice-align">
-<div class="hero-body-candidate1">
-<font color="white">Candidate for Vice-Governor</font>
-</div>
+    <div class="vice-align" style="background-color: #268b23; border: 1px solid; border-radius: 6px;">
 
-<div class="governor">
-<div class="gov-margin">
+        <h2 style="text-shadow: none; color: whitesmoke; text-align: center;">Candidate for Vice Governor</h2>
+
+        <div class="governor" style="background-color:limegreen;">
+            <div class="gov-margin">
 <?php 
 $vice=mysqli_query($conn,"select * from candidate where Position='Vice-Governor'")or die(mysqli_error());
 while($row=mysqli_fetch_array($vice)){ $vice_id=$row['CandidateID']; ?>
@@ -84,12 +68,12 @@ while($row=mysqli_fetch_array($vice)){ $vice_id=$row['CandidateID']; ?>
 <?php
 }
 ?>
-</div>
-</div>
-<div class="select_gov">
-<div class="margin-gov">
-<select name="vice" class="span222">
-<option class="option">--Select Candidate--</option>
+            </div>
+        </div>
+        <div class="select_gov" style="background-color: #268b23;">
+            <div class="margin-gov">
+                <select name="vice" class="span222">
+                    <option class="option">--Select Candidate--</option>
 <?php
 $vice=mysqli_query($conn,"select * from candidate where Position='Vice-Governor'")or die(mysqli_error());
 while($row=mysqli_fetch_array($vice)){ $vice_id=$row['CandidateID']; ?>
@@ -103,15 +87,16 @@ while($row=mysqli_fetch_array($vice)){ $vice_id=$row['CandidateID']; ?>
 
 
 
-<div class="rep-align">
-<div class="hero-body-rep">
+    <div class="rep-align">
+        <br>
+        <div class="hero-body-rep" style="background-color: #b58815; text-shadow: none;">
 <font color="white">&nbsp;&nbsp;
 &nbsp;
 Candidate for 2nd Year Representative</font>
 </div>
 
-<div class="represent">
-<div class="margin-represent">
+        <div class="represent" style="background-color: #268b23;">
+            <div class="margin-represent">
 
 <?php 
 $representative=mysqli_query($conn,"select * from candidate where Position='2nd Year Representative' order by FirstName Asc")or die(mysqli_error());
@@ -125,7 +110,7 @@ while($row=mysqli_fetch_array($representative)){ $representative_id=$row['Candid
 ?>
 </div>
 </div>
-<div class="select_rep">
+<div class="select_rep" style="background-color: #268b23;">
 <div class="margin-gov">
 
 <div class="span44">

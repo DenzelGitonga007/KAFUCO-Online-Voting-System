@@ -29,33 +29,19 @@ mysqli_query($conn,"update voters set Status='Voted' where VoterID='$session_id'
 _redirect('thankyou.php');
 }
 ?>
- <link rel="stylesheet" type="text/css" href="admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="admin/css/style.css" />
 <script src="jquery.iphone-switch.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-	<div class="container">
-	     
-		<a class="brand">
-		<img src="admin/images/chmsc.png" width="60" height="60">
- 	</a>
-	<a class="brand">
-	 <h2>CHMSC Laboratory School Voting System</h2>
-	 <div class="chmsc_nav"><font size="4" color="white">Carlos Hilado Memorial State College</font></div>
- 	</a>
-
-	<?php include('head.php'); ?>
- 
-	</div>
-	</div>
-	</div>
+<!--The voters header file-->
+<?php include('voters_nav_top.php'); ?>
+<br>
 <div class="wrapper">
-
-<div class="hero-body-voting">
-<div class="vote_wise1"><font color="white" size="6">"Official Ballot"</font></div>
+    <!--The Back button-->
+    <div class="hero-body-voting" style="background-color: #b58815;">
+<div class="vote_wise1" style="text-shadow: none;"><font color="white" size="6">"Official Ballot"</font></div>
 <div class="back">
-<a class="btn btn-info" id="bak"  href="voting2.php"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a>
+<a class="btn btn-success" id="bak"  href="voting2.php"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a>
 </div>
 </div>
 
@@ -152,7 +138,7 @@ $name4=$Representative3_row['FirstName']."  ".$Representative3_row['LastName'];
 
  ?>
 
-<div class="ballot">
+<div class="ballot" style="background-color: #268b23; border: 1px solid; border-radius: 6px; color:whitesmoke; text-shadow: none; ">
 
 <div class="cent">
 <p>Governor:&nbsp;&nbsp;</p>
@@ -217,10 +203,37 @@ echo $name2;
 
 
 </div>
+    <!--Inserting into the votes reports. -->
+    <?php
+    if (isset($_POST['vote'])){
+        $gov=$_POST['gov'];
+        mysqli_query($conn,"insert into votes (CandidateID)values('$gov')")or die(mysqli_error());
+
+        $vice=$_POST['vice'];
+        mysqli_query($conn,"insert into votes (CandidateID)values('$vice')")or die(mysqli_error());
+
+        $rep1=$_POST['rep1'];
+        mysqli_query($conn,"insert into votes (CandidateID)values('$rep1')")or die(mysqli_error());
 
 
+        $rep2=$_POST['rep2'];
+        mysqli_query($conn,"insert into votes (CandidateID)values('$rep2')")or die(mysqli_error());
 
-<div class="hero-body-456">
+        $rep3=$_POST['rep3'];
+        mysqli_query($conn,"insert into votes (CandidateID)values('$rep3')")or die(mysqli_error());
+
+
+        mysqli_query($conn,"update voters set Status='Voted' where VoterID='$session_id'") or die(mysqli_error());
+
+        ?>
+
+        <?php
+
+        _redirect('thankyou.php');
+    }
+    ?>
+<!--Submit button-->
+<div class="hero-body-456" style="background-color: #b58815; text-shadow: none;">
 <div class="ok_vote">
 
 		<a class="btn btn-success" id="logout" data-toggle="modal" href="#myModal"><i class="icon-off"></i>&nbsp;Submit Final Votes</a>

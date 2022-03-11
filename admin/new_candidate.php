@@ -85,7 +85,7 @@ include('dbcon.php');
 	</div>
 
         <!--	The links to the candidates in each division-->
-	<div id="element" class="hero-body" style="background-color: #268b23; border: 1px solid;>
+	<div id="element" class="hero-body" style="background-color: #268b23; border: 1px solid;">
 	
 	<form method="POST" action="save_candidate.php" class="form-horizontal" enctype="multipart/form-data">
 	<input type="hidden" name="user_name" class="user_name" value="<?php echo $_SESSION['User_Type']; ?>"/>

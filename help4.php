@@ -1,31 +1,17 @@
-<?php 
+<?php
 include('session.php');
 include('dbcon.php');
 include('header.php');
- ?>
- <link rel="stylesheet" type="text/css" href="admin/css/style.css" />
+?>
+<link rel="stylesheet" type="text/css" href="admin/css/style.css" />
 <script src="jquery.iphone-switch.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-	<div class="container">
-	     
-		<a class="brand">
-		<img src="admin/images/chmsc.png" width="60" height="60">
- 	</a>
-	<a class="brand">
-	 <h2>CHMSC Laboratory School Voting System</h2>
-	 <div class="chmsc_nav"><font size="4" color="white">Carlos Hilado Memorial State College</font></div>
- 	</a>
-
-	<?php include('head.php'); ?>
- 
-	</div>
-	</div>
-	</div>
+<!--The voters header file-->
+<?php include('voters_nav_top.php'); ?>
+<br>
 <div class="wrapper">
-<div class="hero-body-voting">
+<div class="hero-body-voting" style="background-color: #268b23;">
 <div class="vote_wise"><font color="white" size="6">&nbsp;&nbsp;&nbsp;&nbsp;"How to Vote"</font></div>
 
 <div class="help">
